@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Score Breakdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+         #backButton {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      padding: 10px 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: auto;
+      min-width: 120px;
+      max-width: 150px;
+    }
+    #backButton:hover {
+      background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Spotify Popularity </h1>
+        <div id="description">
+            <p>This pie chart visualizes the relative popularity of the top 10 tracks based on their Spotify Popularity score.
+                 Each slice represents a track, with the size of the slice indicating its popularity compared to the others.
+                  Hovering over a slice reveals a tooltip with the track's name, artist's name and its percentage of total popularity.
+            </p>
+        </div>
+        <div id="chart">
+            <svg width="960" height="600"></svg>
+        </div>
+    </div>
+    <button id="backButton">Back to Bar Chart</button>
+
+    <button id="nextChartButton">Go to Next Chart</button>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="pieChart.js"></script>
+    <script>
+        document.getElementById('nextChartButton').addEventListener('click', function() {
+            window.location.href = 'treeMap.html';
+        });
+    </script>
+</body>
+</html>
+

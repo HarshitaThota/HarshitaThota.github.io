@@ -1,0 +1,104 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #bdedbd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.x-axis-label {
+    font-size: 14px;
+    fill: #333;
+}
+
+.y-axis-label {
+    font-size: 14px;
+    fill: #333;
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    pointer-events: none;
+}
+#chart svg {
+    width: 100%;
+    height: auto;
+}
+
+.bar {
+    transition: fill 0.3s, height 0.3s, y 0.3s;
+}
+
+.bar:hover {
+    fill: orange;
+    cursor: pointer;
+}
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    z-index: 1000; /* Ensure the button appears above other elements */
+ }
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#pieChart svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    font-size: 12px;
+    text-anchor: middle;
+}
+
+
+.arc path {
+    stroke: #ffffff;
+    stroke-width: 2px;
+}
+
+.arc text {
+    font-size: 12px;
+    fill: #333333;
+} 
+
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: auto;
+    padding: 5px;
+    font-size: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    pointer-events: none;
+}

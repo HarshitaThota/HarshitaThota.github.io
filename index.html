@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Streamed Spotify Songs 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Top 10 Most Streamed Songs on Spotify - Track Scores (2024)</h1>
+        <p>
+            This bar chart visualizes the top 10 most streamed songs on Spotify for 2024, ranked by their Track Score. The Track Score is a comprehensive metric that combines various factors such as the number of streams, views, likes, and radio plays to assess the overall popularity and engagement of each track. Higher Track Scores indicate greater popularity and listener engagement.
+          </p>
+          
+        <div id="chart">
+            <svg width="960" height="600"></svg>
+        </div>
+    </div>
+    <button id="nextChartButton">Go to Next Chart</button>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.getElementById('nextChartButton').addEventListener('click', function() {
+            window.location.href = 'pieChart.html';
+        });
+    </script>
+</body>
+</html>
+
